@@ -6,7 +6,7 @@
 
     <groupId>com.gerry.utils</groupId>
     <artifactId>java-utils</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -54,7 +54,7 @@
 
     <distributionManagement>
         <repository>
-            <id>susan</id>
+            <id>ads-plugins</id>
             <url>${archive.repository.release.url}</url>
         </repository>
     </distributionManagement>
