@@ -6,12 +6,12 @@
 
     <groupId>com.gerry.utils</groupId>
     <artifactId>java-utils</artifactId>
-    <version>1.2</version>
+    <version>1.3</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <archive.repository.release.url>https://nexus-secure-nexus.mycluster-lon02-m-753506-146c6c4a55409bbdb5403b1a18bbffeb-0000.eu-gb.containers.appdomain.cloud/repository/ads-releases</archive.repository.release.url>
+        <archive.repository.release.url>https://nexus-secure-nexus.mycluster-lon02-m-753506-146c6c4a55409bbdb5403b1a18bbffeb-0000.eu-gb.containers.appdomain.cloud/repository/ads-plugins</archive.repository.release.url>
     </properties>
 
     <dependencies>

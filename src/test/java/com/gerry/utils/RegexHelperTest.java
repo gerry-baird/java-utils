@@ -20,12 +20,23 @@ class RegexHelperTest {
     }
 
     @Test
+    void findSimplePatternWordBoundary() {
+
+        String pattern = "\\bsl.m";
+        String src = "some slime";
+
+        boolean result = RegexHelper.patternFound(src,pattern);
+
+        assertTrue(result);
+    }
+
+    @Test
     void simpleMatch() {
 
         String pattern = ".*is.*"; // string contains "is"
         String src = "regex is fun";
 
-        boolean result = RegexHelper.patternMatches(src,pattern);
+        boolean result = RegexHelper.patternDoesMatch(src,pattern);
 
         assertTrue(result);
     }
@@ -35,7 +46,7 @@ class RegexHelperTest {
         String pattern = "\\d{4}-\\d{4}-\\d{2}";
         String src = "1111-2222-22";
 
-        boolean result = RegexHelper.patternMatches(src,pattern);
+        boolean result = RegexHelper.patternDoesMatch(src,pattern);
 
         assertTrue(result);
     }
@@ -46,7 +57,7 @@ class RegexHelperTest {
         String pattern = "\\b[Cc][Aa][Tt]\\b";
         String src = "cat";
 
-        boolean result = RegexHelper.patternMatches(src,pattern);
+        boolean result = RegexHelper.patternDoesMatch(src,pattern);
 
         assertTrue(result);
     }
@@ -67,7 +78,7 @@ class RegexHelperTest {
         String pattern = "(\\d{1,3}\\.){3}\\d{1,3}";
         String src = "123.123.123.122";
 
-        boolean result = RegexHelper.patternMatches(src,pattern);
+        boolean result = RegexHelper.patternDoesMatch(src,pattern);
 
         assertTrue(result);
     }

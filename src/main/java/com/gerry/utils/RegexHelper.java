@@ -20,7 +20,7 @@ public class RegexHelper {
     }
 
     @PureFunction
-    public static boolean patternMatches(String str, String ptn) {
+    public static boolean patternDoesMatch(String str, String ptn) {
 
 
         Pattern myPattern = Pattern.compile(ptn, Pattern.CASE_INSENSITIVE);
